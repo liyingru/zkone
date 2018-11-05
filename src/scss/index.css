@@ -206,7 +206,12 @@ body {
   flex-direction: column;
 }
 
-.box1 {
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
@@ -215,23 +220,64 @@ body {
   align-items: center;
   width: 80%;
   height: 0.93333rem;
-  border: 1px solid #ccc;
+  border: 1px solid #666;
   margin: 0.8rem auto;
   border-radius: 0.26667rem;
 }
 
-.box1 input {
+.box1 input,
+.box2 input,
+.box3 input,
+.box4 input,
+.box5 input,
+.box6 input {
   width: 5.6rem;
   height: 100%;
   padding: 0 0.26667rem;
   background: #F7F7F7;
+  border-radius: 0.26667rem;
+}
+
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button,
+.box5 button,
+.box6 button {
+  width: 2.13333rem;
+  height: 100%;
+  border: 0;
+  font-size: 0.37333rem;
+  font-weight: bold;
+  border-radius: 0 0.26667rem 0.26667rem 0;
 }
 
 .box1 button {
-  width: 2.13333rem;
-  height: 100%;
   background: #DEDEDE;
   color: #58596C;
-  border: 0;
-  font-size: 0.37333rem;
+}
+
+.box2 button {
+  background: #0E4F8C;
+  color: #fff;
+}
+
+.box3 button {
+  background: #84973B;
+  color: #fff;
+}
+
+.box4 button {
+  background: #A51554;
+  color: #fff;
+}
+
+.box5 button {
+  background: #DF5509;
+  color: #fff;
+}
+
+.box6 button {
+  background: #313131;
+  color: #fff;
 }

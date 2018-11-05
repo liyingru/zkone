@@ -19,12 +19,17 @@ body {
     @include direction(column);
 }
 
-.box1 {
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
     @include box_flex;
     @include align;
     width: 80%;
     height: pxTorem(35px);
-    border: 1px solid #ccc;
+    border: 1px solid #666;
     margin: pxTorem(30px) auto;
     border-radius: pxTorem(10px);
     input {
@@ -32,13 +37,44 @@ body {
         height: 100%;
         padding: 0 pxTorem(10px);
         background: #F7F7F7;
+        border-radius: pxTorem(10px);
     }
     button {
         width: pxTorem(80px);
         height: 100%;
-        background: #DEDEDE;
-        color: #58596C;
         border: 0;
         font-size: pxTorem(14px);
+        font-weight: bold;
+        border-radius: 0 pxTorem(10px) pxTorem(10px) 0;
     }
+}
+
+.box1 button {
+    background: #DEDEDE;
+    color: #58596C;
+}
+
+.box2 button {
+    background: #0E4F8C;
+    color: #fff;
+}
+
+.box3 button {
+    background: #84973B;
+    color: #fff;
+}
+
+.box4 button {
+    background: #A51554;
+    color: #fff;
+}
+
+.box5 button {
+    background: #DF5509;
+    color: #fff;
+}
+
+.box6 button {
+    background: #313131;
+    color: #fff;
 }
